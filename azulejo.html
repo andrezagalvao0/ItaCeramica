@@ -5,9 +5,12 @@
         <title>Azulejo Decorativo</title>
         <meta charset="utf-8">
         <link rel="icon" href="images/logo.png"/>
-        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="produtos.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        
+        
     </head>
 
     
@@ -15,20 +18,78 @@
         <h1>Azulejo Decorativo Para Cozinha</h1>
         <img src="images/azulejo.jpg" style="width:182px; height:180px;" alt="Bloco ceramico">
         </br></br></br>
-        <p><strong>Destalhes:</strong></p>
-        <p> O material é vinílico e resistente. A limpeza pode ser feita com um pano úmido e</br> sabão neutro.
-                Podem ser aplicados na sala, quartos, cozinha, banheiros e corredores. </p>
-        <p> - Dimensão: 15x15cm</p>
-        <p> - Material:	PVC Auto Adesivo Fosco</p>
-        <p> - Gramatura / Espessura: 150 Gramas / 0,10MM</p>
-        <p> - Característica: Sem Relevo / Material Liso</p>
-        <p> - Necessita de Cola:	Não</p>
-        <p> - Lavável: Sim</p>
-        <p> - Tóxico:  Não</p>
+        <p><strong>Detalhes:</strong></p>
+
+        <div > 
+
+                <table>
+                  <tr >
+                    <td> O material é vinílico e resistente. A limpeza pode ser feita com um pano úmido e</br> sabão neutro.
+                        Podem ser aplicados na sala, quartos, cozinha, banheiros e corredores.
+                    </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                Dimensão: 15x15cm
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                Material:	PVC Auto Adesivo Fosco
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                Gramatura / Espessura: 150 Gramas / 0,10MM
+                        </td>
+                  </tr>
+
+                  <tr>
+                        <td>
+                                Característica: Sem Relevo / Material Liso
+                        </td>
+                  </tr>
+
+                  <tr>
+                        <td>
+                                Necessita de Cola:	Não
+                        </td>
+                  </tr>
+                  
+                  <tr>
+                        <td>
+                                Lavável: Sim
+                        </td>
+                  </tr>
+                  
+                  <tr>
+                        <td>
+                               Tóxico:  Não
+                        </td>
+                  </tr>
+                  
+                </table>
+                
+        </div>
+
+        </br></br></br>
+
+
+        <div data-ng-app="" data-ng-init="quantity=1;price">
+
+                
+                Quantidade: <input type="number" ng-model="quantity">
+                Preço: R$ 1,00
+                
+                <p><b>Total : R$ </b> {{quantity * 1.00}}</p>
+
+                <p class="button-prod">Comprar</p>
+                
+        </div>
        
 
         </br></br></br>
 
-        <a href="index.html">Voltar</a>
+        <a href="index (1).html">Voltar</a>
     </body>
 </html>

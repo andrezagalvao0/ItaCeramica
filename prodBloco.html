@@ -5,9 +5,10 @@
         <title>Bloco Ceramico Baianão</title>
         <meta charset="utf-8">
         <link rel="icon" href="images/logo.png"/>
-        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="produtos.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     </head>
 
     
@@ -15,11 +16,38 @@
         <h1>Bloco Ceramico Bainão</h1>
         <img src="images/blocoC.jpg" style="width:182px; height:180px;" alt="Bloco ceramico">
         </br></br></br>
-        <p><strong>Destalhes:</strong></p>
-        <p> - CERÂMICA SAFIRA</p>
-        <p> - DIMENSÃO: 14x19x29cm</p>
+        <p><strong>Detalhes:</strong></p>
+        <div > 
+
+                <table>
+                  <tr >
+                    <td> 
+                            CERÂMICA SAFIRA
+                    </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                DIMENSÃO: 14x19x29cm
+                        </td>
+                  </tr>
+            </table>
+        </div>   
+
+        </br></br></br>
+        
+        <div data-ng-app="" data-ng-init="quantity=1;price">
+
+                
+                Quantidade: <input type="number" ng-model="quantity">
+                Preço: R$ 3,00
+                
+                <p><b>Total : R$ </b> {{quantity * 3.00}}</p>
+
+                <p class="button-prod">Comprar</p>
+                
+        </div>
         </br></br></br>
 
-        <a href="index.html">Voltar</a>
+        <a href="index (1).html">Voltar</a>
     </body>
 </html>

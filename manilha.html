@@ -5,9 +5,10 @@
         <title>Manilha de Barro</title>
         <meta charset="utf-8">
         <link rel="icon" href="images/logo.png"/>
-        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="produtos.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     </head>
 
     
@@ -15,11 +16,39 @@
         <h1>Manilha de Barro</h1>
         <img src="images/manilha.jpg" style="width:182px; height:180px;" alt="Bloco ceramico">
         </br></br></br>
-        <p><strong>Destalhes:</strong></p>
-        <p>A manilha de barro para chaminé é uma ótima opção para deixar seu forno e fogão a lenha mais rústico. </p>
-        <p> - DIAMETRO: 100mm por 1 metro</p>
+        <p><strong>Detalhes:</strong></p>
+
+        <div > 
+
+            <table>
+                  <tr >
+                    <td> 
+                        A manilha de barro para chaminé é uma ótima opção para deixar seu forno e fogão a lenha mais rústico.
+                    </td>
+                  </tr>
+                  <tr>
+                        <td>
+                            DIAMETRO: 100mm por 1 metro
+                        </td>
+                  </tr>
+            </table>
+        </div>   
+
+        </br></br></br>
+        
+        <div data-ng-app="" data-ng-init="quantity=1;price">
+
+                
+                Quantidade: <input type="number" ng-model="quantity">
+                Preço: R$ 19,80
+                
+                <p><b>Total : R$ </b> {{quantity * 19.80}}</p>
+
+                <p class="button-prod">Comprar</p>
+                
+        </div>
         </br></br></br>
 
-        <a href="index.html">Voltar</a>
+        <a href="index (1).html">Voltar</a>
     </body>
 </html>

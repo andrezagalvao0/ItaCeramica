@@ -5,9 +5,10 @@
         <title>Telha em Cerâmica Romana</title>
         <meta charset="utf-8">
         <link rel="icon" href="images/logo.png"/>
-        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="produtos.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     </head>
 
     
@@ -15,24 +16,122 @@
         <h1>Telha em Cerâmica Romana Realeza Gold</h1>
         <img src="images/telha.png" style="width:182px; height:180px;" alt="Bloco ceramico">
         </br></br></br>
-        <p><strong>Destalhes:</strong></p>
-        <p> - Largura(cm): 23,6</p>
-        <p> - Marca: Barrobello</p>
-        <p> - Comprimento(cm): 40,4</p>
-        <p> - Altura(cm): 1,5</p>
-        <p> - Garantia (mês):	60</p>
-        <p> - Conteúdo da Embalagem:	1 telha</p>
-        <p> - Modelo:	Romana</p>
-        <p> - Tipo de Material:	Cerâmico</p>
-        <p> - Informações Adicionais: Galga Mínima 33cm</p>
-        <p> - Espessura (cm):	1,5</p>
-        <p> - Quantidade de Telha por m²:	15,5</p>
-        <p> - Impermeável:	Resinado</p>
-        <p> - Material:	Cerâmico</p>
-        <p> - Cor:	Vermelho</p>
+        <p><strong>Detalhes:</strong></p>
+
+        <div > 
+
+                <table>
+                  <tr >
+                    <td> 
+                        Largura(cm): 23,6
+                    </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                Marca: Barrobello
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                Comprimento(cm): 40,4
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                                Altura(cm): 1,5
+                        </td>
+                  </tr>
+
+                  <tr>
+                        <td>
+                                Garantia (mês):	60
+                        </td>
+                  </tr>
+
+                  <tr>
+                        <td>
+                                Conteúdo da Embalagem:	1 telha
+                        </td>
+                  </tr>
+                  
+                  <tr>
+                        <td>
+                                Modelo:	Romana
+                        </td>
+                  </tr>
+                  
+                  <tr>
+                        <td>
+                                Tipo de Material:	Cerâmico
+                        </td>
+                  </tr>
+
+                  <tr>
+                      <td>
+                            Informações Adicionais: Galga Mínima 33cm
+                      </td>
+                  </tr>
+
+                  <tr>
+                        <td>
+                            Informações Adicionais: Galga Mínima 33cm
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Espessura (cm):	1,5 
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Quantidade de Telha por m²:	15,5
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Impermeável:	Resinado     
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Material:	Cerâmico     
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Cor:	Vermelho
+                        </td>
+                    </tr>
+                  
+                </table>
+                
+        </div>
 
         </br></br></br>
 
-        <a href="index.html">Voltar</a>
+
+        <div data-ng-app="" data-ng-init="quantity=1;price">
+
+                
+                Quantidade: <input type="number" ng-model="quantity">
+                Preço: R$ 0,99
+                
+                <p><b>Total : R$ </b> {{quantity * 0.99}}</p>
+
+                <p class="button-prod">Comprar</p>
+                
+        </div>
+       
+
+        </br></br></br>
+
+        
+
+        <a href="index (1).html">Voltar</a>
     </body>
 </html>
